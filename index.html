@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en_US">
+<head>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Triangle Tracker</title>
+</head>
+<body>
+  <div id="question">
+    <h1>Triangle Tracker</h1>
+    <p>Enter three side lengths to discover your corresponding triangle type:</p>
+  </div>
+  <form id="triangle">
+    <input type="text" id="sideOne" placeholder="Side One">
+    <input type="text" id="sideTwo" placeholder="Side Two">
+    <input type="text" id="sideThree" placeholder="Side Three">
+    <input type="submit">
+  </form>
+  <div id="equilateral" class="hidden">
+    <h1>Equilateral Triangle</h1>
+    <p>All the sides are equal.</p>
+  </div>
+  <div id="isosceles" class="hidden"> 
+    <h1>Isosceles Triangle</h1>
+    <p>Two sides are equal.</p>
+  </div>
+  <div id="scalene" class="hidden">
+    <h1>Scalene Triangle</h1>
+    <p>No sides are equal.</p>
+  </div>
+  <div id="not-a-triangle" class="hidden">
+    <h1>Not a Triangle</h1>
+    <p>The sum of lengths of two sides of your given lengths are not greater than the third side.</p>
+  </div>
+</body>
+</html>
